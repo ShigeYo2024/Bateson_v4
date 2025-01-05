@@ -146,6 +146,7 @@ st.text_area("今の気持ち", key="feeling", height=100, placeholder="例: チ
 st.text_area("学びたいこと", key="learning_goal", height=100, placeholder="例: 歴史上の人物で似たような状況に置かれた人の課題克服方法を学びたい")
 
 if st.button("送信", on_click=communicate):
+    communicate()
     save_history()
 
 if st.session_state["messages"]:
