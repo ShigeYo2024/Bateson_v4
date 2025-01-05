@@ -147,7 +147,6 @@ st.text_area("学びたいこと", key="learning_goal", height=100, placeholder=
 
 if st.button("送信", on_click=communicate):
     communicate()
-    save_history()
 
 if st.session_state["messages"]:
     messages = st.session_state["messages"]
